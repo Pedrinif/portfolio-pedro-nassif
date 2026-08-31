@@ -2,7 +2,7 @@
 
 🔗 **[Ver portfólio ao vivo](https://portfolio-pedro-nassif.vercel.app)**
 
-Meu portfólio pessoal, feito do zero com HTML, CSS e JavaScript puro.
+Meu portfólio pessoal.
 
 ## Tecnologias
 
