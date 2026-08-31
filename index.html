@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Pedro Lauria Nassif — Engenharia da Computação, Dados e Desenvolvimento.">
+  <title>Pedro Nassif — Tecnologia & Dados</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="scanline"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="Pedro Nassif">
+      <img src="assets/logo.png" alt="Logo Pedro Nassif">
+      <span>PEDRO<span class="blue">.DEV</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <nav class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Stack</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato" class="nav-cta">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> DISPONÍVEL PARA OPORTUNIDADES</div>
+        <p class="kicker">ENGENHARIA DA COMPUTAÇÃO · DADOS · SOFTWARE</p>
+        <h1>Transformo<br><span class="gradient">dados em soluções.</span></h1>
+        <p class="hero-text">
+          Sou <strong>Pedro Lauria Nassif</strong>, estudante de Engenharia da Computação
+          com foco em Análise de Dados, automação e desenvolvimento de sistemas.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projetos">Explorar projetos <span>↗</span></a>
+          <a class="btn ghost" href="assets/curriculo-pedro-nassif.pdf" target="_blank">Ver currículo <span>↓</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><b>01</b> Python / SQL</span>
+          <span><b>02</b> Dashboards</span>
+          <span><b>03</b> Backend</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="robot-wrap">
+          <div class="robot">
+            <div class="antenna"><i></i></div>
+            <div class="robot-head">
+              <div class="ear left"></div><div class="ear right"></div>
+              <div class="eye left"></div><div class="eye right"></div>
+              <div class="visor"></div>
+              <div class="mouth"><span></span><span></span><span></span></div>
+            </div>
+            <div class="neck"></div>
+            <div class="robot-body">
+              <div class="screen"><span>●</span><small>SYS ONLINE</small></div>
+              <div class="body-line"></div>
+            </div>
+            <div class="arm left"></div><div class="arm right"></div>
+            <div class="leg left"></div><div class="leg right"></div>
+          </div>
+          <div class="platform"></div>
+        </div>
+
+        <div class="floating-card card-code">
+          <span class="dot"></span>
+          <code>SELECT * FROM<br>solutions;</code>
+        </div>
+        <div class="floating-card card-status">
+          <span class="status-icon">✓</span>
+          <div><small>STATUS</small><strong>BUILDING</strong></div>
+        </div>
+        <div class="floating-card card-data">
+          <small>DATA FLOW</small>
+          <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section about">
+      <div class="section-label">01 / SOBRE</div>
+      <div class="section-heading">
+        <h2>Curioso por natureza.<br><span>Analítico por escolha.</span></h2>
+        <p>
+          Meu foco está em usar tecnologia para entender problemas, organizar informação
+          e construir soluções que tenham utilidade real.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card large">
+          <span class="quote-mark">“</span>
+          <p>
+            Busco uma oportunidade de estágio ou posição júnior em Tecnologia e Dados,
+            principalmente em <strong>Análise de Dados</strong>, com interesse em ETL,
+            dashboards e acompanhamento de métricas para apoiar decisões de negócio.
+          </p>
+          <div class="mini-terminal">
+            <span>pedro@dev:~$</span> whoami<br>
+            <b>engineering_student</b> · data · software
+          </div>
+        </div>
+        <div class="about-card stat">
+          <strong>2027</strong>
+          <span>previsão de conclusão</span>
+        </div>
+        <div class="about-card stat">
+          <strong>SQL</strong>
+          <span>dados relacionais</span>
+        </div>
+        <div class="about-card stat">
+          <strong>ETL</strong>
+          <span>tratamento de dados</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-label">02 / STACK</div>
+      <div class="section-heading compact">
+        <h2>Ferramentas que <span>uso para construir.</span></h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card featured">
+          <div class="skill-top"><span class="skill-number">01</span><span class="skill-icon">◈</span></div>
+          <h3>Data & Analytics</h3>
+          <p>Transformação de dados em informação acionável e visualizações claras.</p>
+          <div class="tags"><span>Python</span><span>SQL</span><span>Power BI</span><span>Excel</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top"><span class="skill-number">02</span><span class="skill-icon">⌘</span></div>
+          <h3>Web & Backend</h3>
+          <p>Interfaces e APIs para sistemas web com lógica de negócio.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top"><span class="skill-number">03</span><span class="skill-icon">⬡</span></div>
+          <h3>Dev & Infra</h3>
+          <p>Versionamento, containers e publicação de aplicações.</p>
+          <div class="tags"><span>Git</span><span>Docker</span><span>VPS</span><span>APIs</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top"><span class="skill-number">04</span><span class="skill-icon">↗</span></div>
+          <h3>Competências</h3>
+          <p>Raciocínio analítico, resolução de problemas, comunicação e trabalho em equipe.</p>
+          <div class="tags"><span>Analítico</span><span>Proativo</span><span>Colaborativo</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projetos" class="section projects">
+      <div class="section-label">03 / PROJETOS</div>
+      <div class="section-heading">
+        <h2>Projetos que <span>saíram do papel.</span></h2>
+        <p>Uma seleção de trabalhos acadêmicos e aplicações desenvolvidas com foco em problemas reais.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card featured-project">
+          <div class="project-index">01</div>
+          <div class="project-main">
+            <div class="project-type">PLATAFORMA WEB · FULL STACK</div>
+            <h3>SeuValet</h3>
+            <p>Plataforma voltada à otimização da operação de valets, conectando fluxo de veículos, notificações e pagamentos em uma experiência digital.</p>
+            <div class="project-tech"><span>Python</span><span>Flask</span><span>SQL</span><span>JavaScript</span><span>Docker</span><span>Stripe</span></div>
+            <a class="project-link" href="https://seuvalet.com" target="_blank" rel="noopener">Visitar projeto <span>↗</span></a>
+          </div>
+          <div class="project-visual valet-visual">
+            <div class="mock-window">
+              <div class="window-bar"><i></i><i></i><i></i></div>
+              <div class="map-lines"><span></span><span></span><span></span></div>
+              <div class="map-pin"></div>
+              <div class="mock-data"><b>CARRO CHEGADO</b><small>Operação em tempo real</small></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">02</div>
+          <div class="project-main">
+            <div class="project-type">TRABALHO DE GRADUAÇÃO · PYTHON</div>
+            <h3>OptiGraph</h3>
+            <p>Sistema de otimização de fluxo em redes logísticas industriais usando teoria dos grafos e simulação de eventos discretos.</p>
+            <div class="project-tech"><span>Python</span><span>NetworkX</span><span>SimPy</span><span>Streamlit</span></div>
+            <a class="project-link" href="https://github.com/Pedrinif/TCC-Project" target="_blank" rel="noopener">Ver no GitHub <span>↗</span></a>
+          </div>
+          <div class="project-badge"><span>G=(V,E)</span><small>OPTIMIZATION</small></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">03</div>
+          <div class="project-main">
+            <div class="project-type">MONITORAMENTO · WEB</div>
+            <h3>SIGINT</h3>
+            <p>Projeto de monitoramento e decodificação de sinais, com estrutura web e execução conteinerizada.</p>
+            <div class="project-tech"><span>HTML</span><span>Web</span><span>Docker</span><span>JavaScript</span></div>
+            <a class="project-link" href="https://github.com/Pedrinif/SIGINT" target="_blank" rel="noopener">Ver no GitHub <span>↗</span></a>
+          </div>
+          <div class="project-badge radar"><span>◉</span><small>SIGNAL MONITOR</small></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">04</div>
+          <div class="project-main">
+            <div class="project-type">WEB · PLANEJAMENTO</div>
+            <h3>Voyageur</h3>
+            <p>Site de cronograma de viagem com foco em planejamento e organização de roteiros.</p>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="project-link" href="https://github.com/Pedrinif/voyageur" target="_blank" rel="noopener">Ver no GitHub <span>↗</span></a>
+          </div>
+          <div class="project-badge route"><span>→ → →</span><small>TRIP PLANNER</small></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section experience">
+      <div class="section-label">04 / TRAJETÓRIA</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">ATUAL</div>
+          <div class="timeline-content">
+            <span class="role">Engenharia da Computação</span>
+            <h3>Universidade de Taubaté — UNITAU</h3>
+            <p>Formação com previsão de conclusão em julho de 2027.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">EXPERIÊNCIA</div>
+          <div class="timeline-content">
+            <span class="role">Ajudante Administrativo</span>
+            <h3>Empório Bebidas</h3>
+            <p>Extração, tratamento e análise de vendas com Excel; estruturação de bases de notas fiscais e movimentações; acompanhamento de KPIs e uso de sistemas de gestão para fluxos logísticos e financeiros.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact">
+      <div class="contact-panel">
+        <div>
+          <div class="section-label">05 / CONTATO</div>
+          <h2>Vamos construir algo<br><span>inteligente.</span></h2>
+          <p>Aberto a oportunidades de estágio e posições júnior em Tecnologia e Dados.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:nassifpedroca@gmail.com"><span>EMAIL</span><strong>nassifpedroca@gmail.com</strong><i>↗</i></a>
+          <a href="https://www.linkedin.com/in/pedro-l-nassif-1204983a3" target="_blank" rel="noopener"><span>LINKEDIN</span><strong>/pedro-l-nassif</strong><i>↗</i></a>
+          <a href="https://github.com/Pedrinif" target="_blank" rel="noopener"><span>GITHUB</span><strong>/Pedrinif</strong><i>↗</i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/logo.png" alt="">
+    <span>© <span id="year"></span> Pedro Lauria Nassif</span>
+    <span class="footer-status"><i></i> SYSTEM ONLINE</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
