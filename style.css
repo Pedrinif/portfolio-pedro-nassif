@@ -38,25 +38,21 @@ a{text-decoration:none;color:inherit}
 .orb{position:absolute;border-radius:50%;filter:blur(1px);border:1px solid rgba(47,171,255,.16)}
 .orb-a{width:420px;height:420px;background:radial-gradient(circle,rgba(25,143,255,.13),transparent 68%);box-shadow:inset 0 0 80px rgba(32,150,255,.08)}
 .orb-b{width:570px;height:570px;border-color:rgba(47,171,255,.06);transform:rotate(22deg);border-radius:42%}
-.robot-wrap{position:relative;width:300px;height:440px;z-index:2;filter:drop-shadow(0 25px 45px rgba(0,120,255,.18))}
-.robot{position:absolute;inset:0}
-.antenna{position:absolute;top:5px;left:50%;width:2px;height:43px;background:#dce8f5;transform:translateX(-50%)}
-.antenna i{position:absolute;top:-4px;left:-4px;width:10px;height:10px;border-radius:50%;background:#2bbaff;box-shadow:0 0 18px #20a9ff}
-.robot-head{position:absolute;top:47px;left:48px;width:204px;height:153px;background:linear-gradient(145deg,#f8fbff,#9ba8b8);border:3px solid #fff;border-radius:36px 36px 45px 45px;box-shadow:inset -18px -20px 35px rgba(48,65,85,.25),0 20px 50px rgba(0,0,0,.4)}
-.robot-head:after{content:"";position:absolute;inset:13px;border:2px solid rgba(24,50,78,.18);border-radius:25px 25px 35px 35px}
-.ear{position:absolute;top:54px;width:14px;height:48px;background:#718096;border-radius:8px;z-index:-1}.ear.left{left:-12px}.ear.right{right:-12px}
-.eye{position:absolute;top:54px;width:30px;height:23px;background:#07101a;border-radius:9px;box-shadow:inset 0 0 10px rgba(38,176,255,.65);z-index:2}
-.eye:after{content:"";position:absolute;left:9px;top:7px;width:8px;height:6px;background:#36bfff;border-radius:50%;box-shadow:0 0 12px #27b5ff}.eye.left{left:49px}.eye.right{right:49px}
-.visor{position:absolute;top:46px;left:40px;right:40px;height:40px;border:1px solid rgba(45,110,155,.3);border-radius:14px;background:rgba(5,20,34,.1)}
-.mouth{position:absolute;bottom:29px;left:50%;transform:translateX(-50%);display:flex;gap:5px;z-index:2}.mouth span{width:6px;height:6px;border-radius:50%;background:#31506d}
-.neck{position:absolute;top:196px;left:122px;width:56px;height:32px;background:linear-gradient(#5e6d7d,#1c2735);border-radius:7px}
-.robot-body{position:absolute;top:218px;left:39px;width:222px;height:173px;background:linear-gradient(145deg,#eaf0f6,#778493);clip-path:polygon(12% 0,88% 0,100% 15%,92% 100%,8% 100%,0 15%);border:3px solid #fff;box-shadow:inset -18px -30px 45px rgba(31,48,68,.28)}
-.screen{position:absolute;top:40px;left:67px;width:88px;height:59px;border:2px solid #3caaff;border-radius:10px;background:#07111d;box-shadow:0 0 20px rgba(30,160,255,.15);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}
-.screen span{color:#39c7ff;font-size:15px}.screen small{font:7px "Space Mono";color:#7fa3bf}
-.body-line{position:absolute;left:55px;right:55px;bottom:28px;height:3px;background:#607184;border-radius:3px;box-shadow:0 -9px 0 #8391a0}
-.arm{position:absolute;top:241px;width:27px;height:130px;background:linear-gradient(#aab5c0,#596777);border:2px solid #fff;border-radius:16px}.arm.left{left:13px;transform:rotate(9deg)}.arm.right{right:13px;transform:rotate(-9deg)}
-.leg{position:absolute;top:373px;width:49px;height:68px;background:linear-gradient(#8b99a8,#344252);border:2px solid #fff;border-radius:0 0 15px 15px}.leg.left{left:77px}.leg.right{right:77px}
-.platform{position:absolute;bottom:-8px;left:10px;width:280px;height:22px;background:linear-gradient(90deg,transparent,#2caeff,transparent);filter:blur(4px);opacity:.75}.platform:after{content:"";position:absolute;inset:0;background:#0b1723;border:1px solid rgba(45,174,255,.25);transform:perspective(160px) rotateX(50deg)}
+.mini-bots{position:absolute;inset:0;z-index:2}
+.mini-bot{position:absolute;filter:drop-shadow(0 16px 26px rgba(0,120,255,.28));animation:botfloat 6s ease-in-out infinite;animation-delay:var(--d,0s)}
+.mini-bot .shell{position:relative;width:var(--s);height:var(--s);border-radius:50%;background:radial-gradient(circle at 33% 27%,#cdf4ff,#2bb4ff 46%,#0f57e0 100%);box-shadow:inset -9px -9px 18px rgba(0,28,85,.5),inset 5px 5px 10px rgba(255,255,255,.22),0 0 28px rgba(35,150,255,.25)}
+.mini-bot .eye{position:absolute;top:41%;width:17%;height:17%;background:#04101c;border-radius:50%;box-shadow:0 0 7px rgba(70,205,255,.7),inset 0 0 4px rgba(80,210,255,.9)}
+.mini-bot .eye.l{left:25%}.mini-bot .eye.r{right:25%}
+.mini-bot .spike{position:absolute;top:50%;left:50%;width:15%;height:26%;margin:-13% 0 0 -7.5%;border-radius:3px;background:linear-gradient(#d8f6ff,#2bb4ff)}
+.mini-bot .spike.a{transform:rotate(0deg) translateY(-150%)}
+.mini-bot .spike.b{transform:rotate(60deg) translateY(-150%)}
+.mini-bot .spike.c{transform:rotate(120deg) translateY(-150%)}
+.mini-bot .spike.d{transform:rotate(180deg) translateY(-150%)}
+.mini-bot .spike.e{transform:rotate(240deg) translateY(-150%)}
+.mini-bot .spike.f{transform:rotate(300deg) translateY(-150%)}
+.mini-bot .antenna{position:absolute;bottom:100%;left:50%;width:2px;height:24%;margin-bottom:22%;background:linear-gradient(#57d5ff,rgba(87,213,255,.15));transform:translateX(-50%)}
+.mini-bot .antenna:after{content:"";position:absolute;top:-5px;left:-3px;width:8px;height:8px;border-radius:50%;background:#57d5ff;box-shadow:0 0 14px #20a9ff}
+@keyframes botfloat{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-20px) rotate(3deg)}}
 .floating-card{position:absolute;background:rgba(7,13,21,.84);border:1px solid rgba(91,157,205,.17);backdrop-filter:blur(12px);border-radius:8px;box-shadow:0 15px 35px rgba(0,0,0,.3);z-index:3}
 .card-code{left:0;top:120px;padding:15px 18px;color:#80b9db;font:10px/1.7 "Space Mono"}.card-code .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#39c7ff;margin-right:8px}.card-code code{display:block;margin-top:7px;color:#b8e5ff}
 .card-status{right:10px;top:165px;padding:12px 15px;display:flex;gap:10px;align-items:center}.status-icon{display:grid;place-items:center;width:25px;height:25px;border-radius:50%;background:rgba(44,213,151,.1);color:#4be6ac;font-weight:800}.card-status small,.card-data small{display:block;color:#657c91;font:7px "Space Mono";letter-spacing:.1em}.card-status strong{font:9px "Space Mono";color:#d9f9ed}
