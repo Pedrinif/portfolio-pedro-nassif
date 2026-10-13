@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Pedro Lauria Nassif — Engenharia da Computação, Dados e Desenvolvimento.">
+  <meta name="description" content="Portfólio de Pedro Lauria Nassif — Engenharia da Computação, Desenvolvimento de Software e Dados.">
   <title>Pedro Nassif — Tecnologia & Dados</title>
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,9 +37,15 @@
         <p class="kicker">ENGENHARIA DA COMPUTAÇÃO · DADOS · SOFTWARE</p>
         <h1>Transformo<br><span class="gradient">dados em soluções.</span></h1>
         <p class="hero-text">
-          Sou <strong>Pedro Lauria Nassif</strong>, estudante de Engenharia da Computação
-          com foco em Análise de Dados, automação e desenvolvimento de sistemas.
+          Estudante de Engenharia da Computação que constrói sistemas de ponta a ponta —
+          do backend e das APIs à infraestrutura e aos dados que eles geram.
         </p>
+        <div class="signature">
+          <span class="sig-name">Pedro <em>Lauria Nassif</em></span>
+          <svg class="sig-stroke" viewBox="0 0 220 12" aria-hidden="true" focusable="false">
+            <path d="M2 8 C 45 1, 90 11, 132 5 S 198 2, 218 6" />
+          </svg>
+        </div>
         <div class="hero-actions">
           <a class="btn primary" href="#projetos">Explorar projetos <span>↗</span></a>
           <a class="btn ghost" href="assets/curriculo-pedro-nassif.pdf" target="_blank" rel="noopener">Ver currículo <span>↓</span></a>
@@ -54,28 +60,24 @@
       <div class="hero-visual">
         <div class="orb orb-a"></div>
         <div class="orb orb-b"></div>
-        <div class="mini-bots">
-          <div class="mini-bot" style="--s:72px;--d:0s;top:5%;left:8%">
-            <div class="shell"><span class="eye l"></span><span class="eye r"></span><span class="spike a"></span><span class="spike b"></span><span class="spike c"></span><span class="spike d"></span><span class="spike e"></span><span class="spike f"></span><span class="antenna"></span></div>
-          </div>
-          <div class="mini-bot" style="--s:50px;--d:1.3s;top:24%;left:62%">
-            <div class="shell"><span class="eye l"></span><span class="eye r"></span><span class="spike a"></span><span class="spike b"></span><span class="spike c"></span><span class="spike d"></span><span class="spike e"></span><span class="spike f"></span><span class="antenna"></span></div>
-          </div>
-          <div class="mini-bot" style="--s:60px;--d:.6s;top:52%;left:8%">
-            <div class="shell"><span class="eye l"></span><span class="eye r"></span><span class="spike a"></span><span class="spike b"></span><span class="spike c"></span><span class="spike d"></span><span class="spike e"></span><span class="spike f"></span><span class="antenna"></span></div>
-          </div>
-          <div class="mini-bot" style="--s:42px;--d:2s;top:10%;left:68%">
-            <div class="shell"><span class="eye l"></span><span class="eye r"></span><span class="spike a"></span><span class="spike b"></span><span class="spike c"></span><span class="spike d"></span><span class="spike e"></span><span class="spike f"></span><span class="antenna"></span></div>
-          </div>
-          <div class="mini-bot" style="--s:82px;--d:.3s;top:70%;left:36%">
-            <div class="shell"><span class="eye l"></span><span class="eye r"></span><span class="spike a"></span><span class="spike b"></span><span class="spike c"></span><span class="spike d"></span><span class="spike e"></span><span class="spike f"></span><span class="antenna"></span></div>
+        <div class="code-window">
+          <div class="cw-bar"><i></i><i></i><i></i><span>pipeline.py</span></div>
+          <div class="cw-body">
+            <div class="cw-line"><em>1</em><span class="k">import</span> pandas <span class="k">as</span> pd</div>
+            <div class="cw-line"><em>2</em></div>
+            <div class="cw-line"><em>3</em><span class="k">def</span> <span class="f">transformar</span>(conn):</div>
+            <div class="cw-line"><em>4</em>    df = pd.<span class="f">read_sql</span>(<span class="s">QUERY</span>, conn)</div>
+            <div class="cw-line"><em>5</em>    df = df.<span class="f">dropna</span>(subset=<span class="s">"valor"</span>)</div>
+            <div class="cw-line"><em>6</em>    <span class="k">return</span> df.<span class="f">groupby</span>(<span class="s">"mes"</span>).<span class="f">sum</span>()</div>
+            <div class="cw-line"><em>7</em></div>
+            <div class="cw-line out"><em>›</em><span class="ok">✓</span> 14.820 linhas processadas<span class="caret"></span></div>
           </div>
         </div>
+        <span class="code-chip chip-a">SELECT</span>
+        <span class="code-chip chip-b">git push</span>
+        <span class="code-chip chip-c">{ }</span>
+        <span class="code-chip chip-d">df.merge()</span>
 
-        <div class="floating-card card-code">
-          <span class="dot"></span>
-          <code>SELECT * FROM<br>solutions;</code>
-        </div>
         <div class="floating-card card-status">
           <span class="status-icon">✓</span>
           <div><small>STATUS</small><strong>BUILDING</strong></div>
@@ -90,7 +92,7 @@
     <section id="sobre" class="section about">
       <div class="section-label">01 / SOBRE</div>
       <div class="section-heading">
-        <h2>Curioso por natureza.<br><span>Analítico por escolha.</span></h2>
+        <h2>Curioso por natureza.<br><span>Construtor por escolha.</span></h2>
         <p>
           Meu foco está em usar tecnologia para entender problemas, organizar informação
           e construir soluções que tenham utilidade real.
@@ -100,9 +102,10 @@
         <div class="about-card large">
           <span class="quote-mark">“</span>
           <p>
-            Busco uma oportunidade de estágio ou posição júnior em Tecnologia e Dados,
-            principalmente em <strong>Análise de Dados</strong>, com interesse em ETL,
-            dashboards e acompanhamento de métricas para apoiar decisões de negócio.
+            Busco uma oportunidade de estágio ou posição júnior em <strong>Tecnologia</strong> —
+            seja construindo aplicações web e APIs, automatizando processos ou trabalhando
+            com dados. Gosto de pegar um problema do começo ao fim: entender, modelar,
+            codar e colocar no ar.
           </p>
           <div class="mini-terminal">
             <span>pedro@dev:~$</span> whoami<br>
@@ -118,8 +121,8 @@
           <span>dados relacionais</span>
         </div>
         <div class="about-card stat">
-          <strong>ETL</strong>
-          <span>tratamento de dados</span>
+          <strong>APIs</strong>
+          <span>backend e integrações</span>
         </div>
       </div>
     </section>
@@ -152,7 +155,7 @@
           <div class="skill-top"><span class="skill-number">04</span><span class="skill-icon">↗</span></div>
           <h3>Competências</h3>
           <p>Raciocínio analítico, resolução de problemas, comunicação e trabalho em equipe.</p>
-          <div class="tags"><span>Analítico</span><span>Proativo</span><span>Colaborativo</span></div>
+          <div class="tags"><span>Autodidata</span><span>Proativo</span><span>Colaborativo</span></div>
         </article>
       </div>
     </section>
@@ -187,6 +190,18 @@
         <article class="project-card">
           <div class="project-index">02</div>
           <div class="project-main">
+            <div class="project-type">PLATAFORMA WEB · FULL STACK</div>
+            <h3>Atasfólio</h3>
+            <p>Portfólio de itens de atas de registro de preços para compras públicas, com catálogo por categoria, carrinho, solicitação de orçamento e painel administrativo.</p>
+            <div class="project-tech"><span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Prisma</span><span>MySQL</span></div>
+            <a class="project-link" href="https://atasfolio.com.br" target="_blank" rel="noopener">Visitar projeto <span>↗</span></a>
+          </div>
+          <div class="project-badge"><span>R$</span><small>REGISTRO DE PREÇOS</small></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">03</div>
+          <div class="project-main">
             <div class="project-type">TRABALHO DE GRADUAÇÃO · PYTHON</div>
             <h3>OptiGraph</h3>
             <p>Sistema de otimização de fluxo em redes logísticas industriais usando teoria dos grafos e simulação de eventos discretos.</p>
@@ -197,7 +212,7 @@
         </article>
 
         <article class="project-card">
-          <div class="project-index">03</div>
+          <div class="project-index">04</div>
           <div class="project-main">
             <div class="project-type">MONITORAMENTO · WEB</div>
             <h3>SIGINT</h3>
@@ -208,17 +223,6 @@
           <div class="project-badge radar"><span>◉</span><small>SIGNAL MONITOR</small></div>
         </article>
 
-        <article class="project-card">
-          <div class="project-index">04</div>
-          <div class="project-main">
-            <div class="project-type">WEB · PLANEJAMENTO</div>
-            <h3>Voyageur</h3>
-            <p>Site de cronograma de viagem com foco em planejamento e organização de roteiros.</p>
-            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <a class="project-link" href="https://github.com/Pedrinif/voyageur" target="_blank" rel="noopener">Ver no GitHub <span>↗</span></a>
-          </div>
-          <div class="project-badge route"><span>→ → →</span><small>TRIP PLANNER</small></div>
-        </article>
       </div>
     </section>
 
@@ -244,6 +248,29 @@
           </div>
         </div>
       </div>
+
+      <div class="certs">
+        <div class="certs-head">
+          <h3>Certificações</h3>
+          <span>80 HORAS · PYTHON 3</span>
+        </div>
+        <div class="certs-grid">
+          <a class="cert-card" href="assets/certificado-python-mundo-1.pdf" target="_blank" rel="noopener">
+            <div class="cert-top"><span class="cert-badge">PY</span><span class="cert-hours">40h</span></div>
+            <strong>Python 3 — Mundo 1</strong>
+            <span class="cert-org">Curso em Vídeo</span>
+            <span class="cert-date">Concluído em set/2026</span>
+            <span class="cert-link">Ver certificado <i>↗</i></span>
+          </a>
+          <a class="cert-card" href="assets/certificado-python-mundo-2.pdf" target="_blank" rel="noopener">
+            <div class="cert-top"><span class="cert-badge">PY</span><span class="cert-hours">40h</span></div>
+            <strong>Python 3 — Mundo 2</strong>
+            <span class="cert-org">Curso em Vídeo</span>
+            <span class="cert-date">Concluído em out/2026</span>
+            <span class="cert-link">Ver certificado <i>↗</i></span>
+          </a>
+        </div>
+      </div>
     </section>
 
     <section id="contato" class="section contact">
@@ -251,7 +278,7 @@
         <div>
           <div class="section-label">05 / CONTATO</div>
           <h2>Vamos construir algo<br><span>inteligente.</span></h2>
-          <p>Aberto a oportunidades de estágio e posições júnior em Tecnologia e Dados.</p>
+          <p>Aberto a oportunidades de estágio e posições júnior em Tecnologia — desenvolvimento, dados ou infraestrutura.</p>
         </div>
         <div class="contact-links">
           <a href="mailto:nassifpedroca@gmail.com"><span>EMAIL</span><strong>nassifpedroca@gmail.com</strong><i>↗</i></a>
@@ -264,7 +291,7 @@
 
   <footer>
     <img src="assets/logo.png" alt="">
-    <span>© <span id="year"></span> Pedro Lauria Nassif</span>
+    <span class="footer-sign">© <span id="year"></span> <b class="sig-name">Pedro <em>Lauria Nassif</em></b></span>
     <span class="footer-status"><i></i> SYSTEM ONLINE</span>
   </footer>
 
