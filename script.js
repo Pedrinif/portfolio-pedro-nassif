@@ -1,11 +1,21 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-menuToggle?.addEventListener('click', () => navLinks.classList.toggle('open'));
+function setMenu(open) {
+  navLinks.classList.toggle('open', open);
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  menuToggle.textContent = open ? '✕' : '☰';
+}
+
+menuToggle?.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
 
 document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+  link.addEventListener('click', () => setMenu(false));
 });
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+window.matchMedia('(min-width: 901px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
