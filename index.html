@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Pedro Lauria Nassif — Engenharia da Computação, Desenvolvimento de Software e Dados.">
+  <title>Pedro Nassif — Tecnologia & Dados</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="scanline"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="Pedro Nassif">
+      <img src="assets/logo.png" alt="Logo Pedro Nassif">
+      <span>PEDRO<span class="blue">.DEV</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav class="nav-links" id="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Stack</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato" class="nav-cta">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> DISPONÍVEL PARA OPORTUNIDADES</div>
+        <p class="kicker">ENGENHARIA DA COMPUTAÇÃO · DADOS · SOFTWARE</p>
+        <h1>Transformo<br><span class="gradient">dados em soluções.</span></h1>
+        <p class="hero-text">
+          Estudante de Engenharia da Computação que constrói sistemas de ponta a ponta —
+          do backend e das APIs à infraestrutura e aos dados que eles geram.
+        </p>
+        <div class="signature">
+          <span class="sig-name">Pedro <em>Lauria Nassif</em></span>
+          <svg class="sig-stroke" viewBox="0 0 220 12" aria-hidden="true" focusable="false">
+            <path d="M2 8 C 45 1, 90 11, 132 5 S 198 2, 218 6" />
+          </svg>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projetos">Explorar projetos <span>↗</span></a>
+          <a class="btn ghost" href="assets/curriculo-pedro-nassif.pdf" target="_blank" rel="noopener">Ver currículo <span>↓</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><b>01</b> Python / SQL</span>
+          <span><b>02</b> Dashboards</span>
+          <span><b>03</b> Backend</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="code-window">
+          <div class="cw-bar"><i></i><i></i><i></i><span>pipeline.py</span></div>
+          <div class="cw-body">
+            <div class="cw-line"><em>1</em><span class="k">import</span> pandas <span class="k">as</span> pd</div>
+            <div class="cw-line"><em>2</em></div>
+            <div class="cw-line"><em>3</em><span class="k">def</span> <span class="f">transformar</span>(conn):</div>
+            <div class="cw-line"><em>4</em>    df = pd.<span class="f">read_sql</span>(<span class="s">QUERY</span>, conn)</div>
+            <div class="cw-line"><em>5</em>    df = df.<span class="f">dropna</span>(subset=<span class="s">"valor"</span>)</div>
+            <div class="cw-line"><em>6</em>    <span class="k">return</span> df.<span class="f">groupby</span>(<span class="s">"mes"</span>).<span class="f">sum</span>()</div>
+            <div class="cw-line"><em>7</em></div>
+            <div class="cw-line out"><em>›</em><span class="ok">✓</span> 14.820 linhas processadas<span class="caret"></span></div>
+          </div>
+        </div>
+        <span class="code-chip chip-a">SELECT</span>
+        <span class="code-chip chip-b">git push</span>
+        <span class="code-chip chip-c">{ }</span>
+        <span class="code-chip chip-d">df.merge()</span>
+
+        <div class="floating-card card-status">
+          <span class="status-icon">✓</span>
+          <div><small>STATUS</small><strong>BUILDING</strong></div>
+        </div>
+        <div class="floating-card card-data">
+          <small>DATA FLOW</small>
+          <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section about">
+      <div class="section-label">01 / SOBRE</div>
+      <div class="section-heading">
+        <h2>Curioso por natureza.<br><span>Construtor por escolha.</span></h2>
+        <p>
+          Meu foco está em usar tecnologia para entender problemas, organizar informação
+          e construir soluções que tenham utilidade real.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card large">
+          <span class="quote-mark">“</span>
+          <p>
+            Busco uma oportunidade de estágio ou posição júnior em <strong>Tecnologia</strong> —
+            seja construindo aplicações web e APIs, automatizando processos ou trabalhando
+            com dados. Gosto de pegar um problema do começo ao fim: entender, modelar,
+            codar e colocar no ar.
+          </p>
+          <div class="mini-terminal">
+            <span>pedro@dev:~$</span> whoami<br>
+            <b>engineering_student</b> · data · software
+          </div>
+        </div>
+        <div class="about-card stat">
+          <strong>2027</strong>
+          <span>previsão de conclusão</span>
+        </div>
+        <div class="about-card stat">
+          <strong>SQL</strong>
+          <span>dados relacionais</span>
+        </div>
+        <div class="about-card stat">
+          <strong>APIs</strong>
+          <span>backend e integrações</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-label">02 / STACK</div>
+      <div class="section-heading compact">
+        <h2>Ferramentas que <span>uso para construir.</span></h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card featured">
+          <div class="skill-top"><span class="skill-number">01</span><span class="skill-icon">◈</span></div>
+          <h3>Data & Analytics</h3>
+          <p>Transformação de dados em informação acionável e visualizações claras.</p>
+          <div class="tags"><span>Python</span><span>SQL</span><span>Power BI</span><span>Excel</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top"><span class="skill-number">02</span><span class="skill-icon">⌘</span></div>
+          <h3>Web & Backend</h3>
+          <p>Interfaces e APIs para sistemas web com lógica de negócio.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top"><span class="skill-number">03</span><span class="skill-icon">⬡</span></div>
+          <h3>Dev & Infra</h3>
+          <p>Versionamento, containers e publicação de aplicações.</p>
+          <div class="tags"><span>Git</span><span>Docker</span><span>VPS</span><span>APIs</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top"><span class="skill-number">04</span><span class="skill-icon">↗</span></div>
+          <h3>Competências</h3>
+          <p>Raciocínio analítico, resolução de problemas, comunicação e trabalho em equipe.</p>
+          <div class="tags"><span>Autodidata</span><span>Proativo</span><span>Colaborativo</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projetos" class="section projects">
+      <div class="section-label">03 / PROJETOS</div>
+      <div class="section-heading">
+        <h2>Projetos que <span>saíram do papel.</span></h2>
+        <p>Uma seleção de trabalhos acadêmicos e aplicações desenvolvidas com foco em problemas reais.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card featured-project">
+          <div class="project-index">01</div>
+          <div class="project-main">
+            <div class="project-type">PLATAFORMA WEB · FULL STACK</div>
+            <h3>SeuValet</h3>
+            <p>Plataforma voltada à otimização da operação de valets, conectando fluxo de veículos, notificações e pagamentos em uma experiência digital.</p>
+            <div class="project-tech"><span>Python</span><span>Flask</span><span>SQL</span><span>JavaScript</span><span>Docker</span><span>Stripe</span></div>
+            <a class="project-link" href="https://seuvalet.com" target="_blank" rel="noopener">Visitar projeto <span>↗</span></a>
+          </div>
+          <div class="project-visual valet-visual">
+            <div class="mock-window">
+              <div class="window-bar"><i></i><i></i><i></i></div>
+              <div class="map-lines"><span></span><span></span><span></span></div>
+              <div class="map-pin"></div>
+              <div class="mock-data"><b>CARRO CHEGADO</b><small>Operação em tempo real</small></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">02</div>
+          <div class="project-main">
+            <div class="project-type">PLATAFORMA WEB · FULL STACK</div>
+            <h3>Atasfólio</h3>
+            <p>Portfólio de itens de atas de registro de preços para compras públicas, com catálogo por categoria, carrinho, solicitação de orçamento e painel administrativo.</p>
+            <div class="project-tech"><span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Prisma</span><span>MySQL</span></div>
+            <a class="project-link" href="https://atasfolio.com.br" target="_blank" rel="noopener">Visitar projeto <span>↗</span></a>
+          </div>
+          <div class="project-badge"><span>R$</span><small>REGISTRO DE PREÇOS</small></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">03</div>
+          <div class="project-main">
+            <div class="project-type">ECOMUP · PYTHON · 2026</div>
+            <h3>Trabalho de Graduação</h3>
+            <p>Estudo Computacional de Otimização em Metodologias Utilizadas em Processos Industriais. Modela processos como grafos e combina análise estrutural com simulação de eventos discretos para achar o gargalo e dimensionar equipes. Trabalho de Graduação aprovado em banca na UNITAU em 17 de novembro de 2026.</p>
+            <div class="project-tech"><span>TCC</span><span>Python</span><span>NetworkX</span><span>SimPy</span><span>Streamlit</span></div>
+            <a class="project-link" href="https://github.com/Pedrinif/TCC-ECOMUP" target="_blank" rel="noopener">Ver no GitHub <span>↗</span></a>
+          </div>
+          <div class="project-badge"><span>G=(V,E)</span><small>OTIMIZAÇÃO</small></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">04</div>
+          <div class="project-main">
+            <div class="project-type">MONITORAMENTO · WEB</div>
+            <h3>SIGINT</h3>
+            <p>Projeto de monitoramento e decodificação de sinais, com estrutura web e execução conteinerizada.</p>
+            <div class="project-tech"><span>HTML</span><span>Web</span><span>Docker</span><span>JavaScript</span></div>
+            <a class="project-link" href="https://github.com/Pedrinif/SIGINT" target="_blank" rel="noopener">Ver no GitHub <span>↗</span></a>
+          </div>
+          <div class="project-badge radar"><span>◉</span><small>SIGNAL MONITOR</small></div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="experiencia" class="section experience">
+      <div class="section-label">04 / TRAJETÓRIA</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">ATUAL</div>
+          <div class="timeline-content">
+            <span class="role">Engenharia da Computação</span>
+            <h3>Universidade de Taubaté — UNITAU</h3>
+            <p>Formação com previsão de conclusão em julho de 2027.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">EXPERIÊNCIA</div>
+          <div class="timeline-content">
+            <span class="role">Ajudante Administrativo</span>
+            <h3>Empório Bebidas</h3>
+            <p>Extração, tratamento e análise de vendas com Excel; estruturação de bases de notas fiscais e movimentações; acompanhamento de KPIs e uso de sistemas de gestão para fluxos logísticos e financeiros.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs">
+        <div class="certs-head">
+          <h3>Certificações</h3>
+          <span>80 HORAS · PYTHON 3</span>
+        </div>
+        <div class="certs-grid">
+          <a class="cert-card" href="assets/certificado-python-mundo-1.pdf" target="_blank" rel="noopener">
+            <div class="cert-top"><span class="cert-badge">PY</span><span class="cert-hours">40h</span></div>
+            <strong>Python 3 — Mundo 1</strong>
+            <span class="cert-org">Curso em Vídeo</span>
+            <span class="cert-date">Concluído em set/2026</span>
+            <span class="cert-link">Ver certificado <i>↗</i></span>
+          </a>
+          <a class="cert-card" href="assets/certificado-python-mundo-2.pdf" target="_blank" rel="noopener">
+            <div class="cert-top"><span class="cert-badge">PY</span><span class="cert-hours">40h</span></div>
+            <strong>Python 3 — Mundo 2</strong>
+            <span class="cert-org">Curso em Vídeo</span>
+            <span class="cert-date">Concluído em out/2026</span>
+            <span class="cert-link">Ver certificado <i>↗</i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact">
+      <div class="contact-panel">
+        <div>
+          <div class="section-label">05 / CONTATO</div>
+          <h2>Vamos construir algo<br><span>inteligente.</span></h2>
+          <p>Aberto a oportunidades de estágio e posições júnior em Tecnologia — desenvolvimento, dados ou infraestrutura.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:nassifpedroca@gmail.com"><span>EMAIL</span><strong>nassifpedroca@gmail.com</strong><i>↗</i></a>
+          <a href="https://www.linkedin.com/in/pedro-l-nassif-1204983a3" target="_blank" rel="noopener"><span>LINKEDIN</span><strong>/pedro-l-nassif</strong><i>↗</i></a>
+          <a href="https://github.com/Pedrinif" target="_blank" rel="noopener"><span>GITHUB</span><strong>/Pedrinif</strong><i>↗</i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/logo.png" alt="">
+    <span class="footer-sign">© <span id="year"></span> <b class="sig-name">Pedro <em>Lauria Nassif</em></b></span>
+    <span class="footer-status"><i></i> SYSTEM ONLINE</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
